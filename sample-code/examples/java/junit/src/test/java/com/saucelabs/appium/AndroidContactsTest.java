@@ -25,8 +25,8 @@ public class AndroidContactsTest {
         File appDir = new File(classpathRoot, "../../../apps/ContactManager");
         File app = new File(appDir, "ContactManager.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName","Android Emulator");
-        capabilities.setCapability("platformVersion", "4.4");
+        capabilities.setCapability("deviceName","Nexus_5");
+        capabilities.setCapability("platformVersion", "6.0");
         capabilities.setCapability("app", app.getAbsolutePath());
         capabilities.setCapability("appPackage", "com.example.android.contactmanager");
         capabilities.setCapability("appActivity", ".ContactManager");
